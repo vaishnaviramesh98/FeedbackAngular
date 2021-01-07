@@ -1,0 +1,16 @@
+.feedback{
+    width: 100%;
+    height: 100%;
+     background-color: rgba(25, 181, 254, 1);
+}
+.subfeed{
+    text-align: center;
+    color: white;
+    padding-top: 15%;
+}
+.subfeed a{
+    margin-top: 48px;
+}
+.subfeed .last{
+    margin-top: 100px;
+}

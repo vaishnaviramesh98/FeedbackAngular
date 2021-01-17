@@ -1,0 +1,14 @@
+.contain{
+    margin: 48px;
+}
+.contain a{
+    padding-left: 12px;
+    margin-left: 12px;
+}
+.container{
+    margin-top: 24px;
+}
+.container a{
+    padding-left: 12px;
+    margin-left: 12px;
+}

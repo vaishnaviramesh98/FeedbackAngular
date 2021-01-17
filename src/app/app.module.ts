@@ -11,13 +11,21 @@ import {MatTableModule} from '@angular/material/table';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { HomeComponent } from './home/home.component';
 import { ReviewComponent } from './review/review.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ThankComponent } from './thank/thank.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//rating module
+import { RatingModule } from 'ng-starrating';
+import { BarRatingModule } from "ngx-bar-rating";
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedbackComponent,
     HomeComponent,
-    ReviewComponent
+    ReviewComponent,
+    ThankComponent
+ 
   ],
   imports: [
     BrowserModule,
@@ -26,7 +34,11 @@ import { ReviewComponent } from './review/review.component';
     MatButtonModule,
     MatIconModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    NgbModule,
+    RatingModule,
+    BarRatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

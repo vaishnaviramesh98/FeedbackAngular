@@ -17,9 +17,8 @@ export interface PeriodicElement {
 
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  // {id: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-{ Id:1 ,client:'Frank M canton',created:'07-27-2020',modified:'08-29-20',feedback:'true'},
-{ Id:1 ,client:'Frank M canton',created:'07-27-2020',modified:'08-29-20',feedback:'true'}
+
+{ Id:1 ,client:'Frank M canton',created:'07-27-2020',modified:'08-29-20',feedback:''}
 ];
 @Component({
   selector: 'app-home',
@@ -34,9 +33,9 @@ export class HomeComponent implements OnInit {
   }
   title = 'task';
   clients: Client[] = [
-    {value: 'steak-0', viewValue: 'TCS'},
-    {value: 'pizza-1', viewValue: 'Infosys'},
-    {value: 'tacos-2', viewValue: 'Wipro'}
+    {value: 'TCS', viewValue: 'TCS'},
+    {value: 'infosys', viewValue: 'Infosys'},
+    {value: 'Wipro', viewValue: 'Wipro'}
   ];
   displayedColumns: string[] = ['Id', 'client', 'created', 'modified','feedback'];
   dataSource = ELEMENT_DATA;

@@ -1,10 +1,18 @@
-<h1>hello</h1>
-
-<a mat-raised-button href="https://www.google.com/" target="_blank" color="primary">Give Client Feedback
+<div class="container">
+  <!-- <a mat-raised-button href="https://www.google.com/" target="_blank"  style="background-color:#17c7c7;" >Give Client Feedback
     <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+</a> -->
+<a mat-raised-button href="https://www.google.com/" target="_blank"  style="background-color:#17c7c7;" >
+  <span class="material-icons">
+    add</span>
+  Give Client Feedback
+  
 </a>
-<a mat-raised-button routerLink="feedback" color="primary">Give Application Feedback
-    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+<a mat-raised-button routerLink="feedback"  style="background-color:#17c7c7;" >
+  <span class="material-icons">
+    add</span>
+  Give Application Feedback
+    <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" >home</mat-icon> -->
 </a>
 <br>
 <br>
@@ -46,9 +54,12 @@
     </ng-container>
     <ng-container matColumnDef="feedback">
         <mat-header-cell *matHeaderCellDef> feedbacks </mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.feedback}} </mat-cell>
+        <mat-cell *matCellDef="let element"> {{element.feedback}} <button mat-stroked-button>Feedbacks</button></mat-cell>
       </ng-container>
   
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
+</div>
+
+
